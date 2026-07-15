@@ -31,6 +31,21 @@ layout: default
 </div>
 {% endfor %}
 
+{% for post in site.posts %}
+<div class="post-wrapper">
+    <div class="post-header">
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        <div class="post-meta">
+            <span class="date">{{ post.date | date: "%Y.%m.%d" }}</span>
+        </div>
+    </div>
+    <div class="post-content">
+        {{ post.excerpt | strip_html | truncatewords: 30 }}
+    </div>
+</div>
+{% endfor %}
+
+
 {% if paginator.total_pages > 1 %}
 <div class="paging" style="margin-top: 40px; margin-bottom: 20px;">
     {% if paginator.previous_page %}
