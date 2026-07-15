@@ -38,27 +38,42 @@ img, embed, video, iframe { max-width: 100%; height: auto; }
 .post-content blockquote { position: relative; margin: 10px 20px; padding: 20px; border: 1px solid #eee; }
 .post-content blockquote p { margin: 0; }
 
-/* 검색창을 감싸는 박스 스타일 */
+/* 1. 검색창 전체 박스 */
+.search-box {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* 2. 아이콘과 입력창을 나란히 배치 */
 .search-container {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #dcdcdc; /* 전체 밑줄은 여기에 줍니다 */
+    border-bottom: 1px solid #dcdcdc; /* 깔끔한 밑줄 */
     padding: 5px 0;
 }
 
-/* 돋보기 아이콘 스타일 */
+/* 3. 돋보기 아이콘 */
 .search-container i {
     color: #999;
-    margin-right: 10px;
+    margin-right: 8px; /* 아이콘과 글자 사이 간격 */
+    font-size: 14px;
 }
 
-/* 검색창에서 밑줄 제거 (박스로 옮겼기 때문) */
-#search {
-    border: none !important;
-    background: transparent;
+/* 4. 입력창 스타일 */
+#search-input {
     width: 100%;
-    outline: none;
+    border: none !important;
+    background: transparent !important;
+    outline: none !important;
+    font-size: 14px;
+    padding: 0;
 }
+
+/* 5. 검색창 클릭 시 밑줄 색상 변경 */
+.search-container:focus-within {
+    border-bottom: 1px solid #666;
+}
+
 /* 태그 */
 .post-tags { padding: 10px 0; margin: 20px 0 0 0; }
 .post-tags li { display: inline; }
