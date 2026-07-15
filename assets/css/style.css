@@ -10,14 +10,13 @@ li { list-style: none; }
 img, embed, video, iframe { max-width: 100%; height: auto; }
 
 /* 2. 전체 레이아웃 */
-#container { margin: 0 auto; padding-top: 20px; width: 615px; }
-#header { text-align: center; padding: 20px; }
-#header h1 { margin: 30px 0; font-family: 'Roboto', sans-serif; font-size: 50px; font-weight: 100; }
+#container { margin: 0 auto; padding-top: 40px; width: 615px; overflow: hidden; }
 
-/* 사이드바 메뉴 */
-#sidebar { width: 140px; float: left; margin-right: 20px; padding: 15px 10px; background: #fff; border: 1px solid #eee; text-align: center; }
-#sidebar #menu { margin: 0; padding: 0 5px; text-align: left; }
-#sidebar #menu li { display: block; padding: 6px 0; font-size: 13px; }
+/* 사이드바 */
+#sidebar { width: 140px; float: left; margin-right: 25px; }
+#sidebar #menu { margin: 0; padding: 0; }
+#sidebar #menu li { display: block; padding: 8px 0; border-bottom: 1px solid #f9f9f9; }
+#sidebar #menu li a { display: flex; align-items: center; gap: 8px; }
 
 /* 메인 콘텐츠 영역 */
 #content { width: 430px; float: right; }
