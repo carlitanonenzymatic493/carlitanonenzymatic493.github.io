@@ -38,20 +38,25 @@ img, embed, video, iframe { max-width: 100%; height: auto; }
 .post-content blockquote { position: relative; margin: 10px 20px; padding: 20px; border: 1px solid #eee; }
 .post-content blockquote p { margin: 0; }
 
-/* 검색창 테두리 제거 및 사이드바 맞춤 */
+/* 검색창을 사이드바 안에 완벽하게 맞추기 */
 #search {
-    border: none !important;            /* 테두리 완전히 없애기 */
-    outline: none !important;           /* 클릭 시 생기는 파란 테두리 제거 */
-    width: 100% !important;             /* 사이드바 너비에 꽉 차게 */
-    padding: 10px;                      /* 내부 여백 */
-    background: #f9f9f9;                /* 아주 연한 회색 배경 (선택사항) */
-    box-sizing: border-box;             /* 너비 계산을 정확하게 */
+    width: 100%;                  /* 사이드바 너비 100% */
+    height: 35px;                 /* 높이 설정 */
+    padding: 0 10px;              /* 좌우 여백 */
+    box-sizing: border-box;       /* 테두리/여백 포함 너비 계산 */
+    
+    background: transparent;      /* 배경색 투명하게 (지저분한 회색 제거) */
+    border: none;                 /* 기존 테두리 전부 제거 */
+    border-bottom: 1px solid #ccc; /* 아래쪽에만 얇은 회색 선 추가 */
+    
+    font-size: 14px;              /* 글자 크기 */
+    color: #333;                  /* 글자 색 */
 }
 
-/* 검색창을 감싸고 있는 박스가 있다면 그 박스도 정리 */
-.search-wrapper {
-    border: none !important;
-    width: 100%;
+/* 검색창 클릭 시 파란 테두리 방지 */
+#search:focus {
+    outline: none;
+    border-bottom: 1px solid #666; /* 클릭 시 선 색상을 살짝 진하게 */
 }
 
 /* 태그 */
