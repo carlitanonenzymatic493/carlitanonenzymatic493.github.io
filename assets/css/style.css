@@ -2,28 +2,46 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,400italic,500italic);
 
-/* 1. 공통 요소 */
-body { font-family: 'Pretendard', sans-serif; font-size: 13px; font-weight: 350; color: #000; }
-a { color: #000; text-decoration: none; transition: all .3s ease; }
-a:hover, a:active { text-decoration: line-through; color: #999; }
-li { list-style: none; }
-img, embed, video, iframe { max-width: 100%; height: auto; }
+/* 1. 공통 초기화 */
+* { box-sizing: border-box; }
+body { font-family: 'Pretendard', sans-serif; font-size: 14px; color: #333; line-height: 1.6; background: #f8f9fa; }
+a { color: #000; text-decoration: none; }
 
-/* 2. 전체 레이아웃 */
+/* 2. 레이아웃 */
 #container { margin: 0 auto; padding-top: 40px; width: 615px; overflow: hidden; }
 
 /* 사이드바 */
 #sidebar { width: 140px; float: left; margin-right: 25px; }
 #sidebar #menu { margin: 0; padding: 0; }
-#sidebar #menu li { display: block; padding: 8px 0; border-bottom: 1px solid #f9f9f9; }
-#sidebar #menu li a { display: flex; align-items: center; gap: 8px; }
+#sidebar #menu li { display: block; padding: 8px 0; border-bottom: 1px solid #eee; }
+#sidebar #menu li a { display: flex; align-items: center; gap: 8px; font-size: 13px; color: #555; }
 
 /* 메인 콘텐츠 영역 */
 #content { width: 430px; float: right; }
 
+/* 3. 포스트 (카드 박스 스타일) */
+.post-wrapper {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 30px;
+    transition: box-shadow 0.2s;
+}
+.post-wrapper:hover { box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+.post-header h2 { margin: 0 0 15px 0; font-size: 18px; font-weight: 600; }
+.post-meta .date { color: #888; font-size: 12px; }
+
+/* 검색창 스타일 */
+.search-box { margin-top: 30px; }
+.search-container { display: flex; align-items: center; border-bottom: 1px solid #ccc; padding: 5px 0; }
+.search-container i { color: #999; margin-right: 8px; }
+#search-input { width: 100%; border: none; background: transparent; outline: none; }
+#results-container { padding: 0; margin-top: 10px; list-style: none; }
+#results-container li { padding: 5px 0; font-size: 12px; }
+
 /* 푸터 */
-#footer { clear: both; padding: 60px 20px; text-align: center; color: #aaa; }
-#footer a { color: #aaa; }
+#footer { clear: both; padding: 60px 0; text-align: center; color: #aaa; font-size: 12px; }
 
 /* 3. 포스트 (글 본문) 레이아웃 */
 .post-wrapper { margin-bottom: 20px; padding: 20px; background: #fff; border: 1px solid #eee; }
